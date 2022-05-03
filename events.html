@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700&display=swap" rel="stylesheet">
+    <title>Riyadha</title>
+</head>
+<body>
+
+    <div id="myNav" class="overlay">
+
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+        <div class="nav-links">
+            <ul class='nav-link-list'>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Events</a></li>
+                <li><a href="#">Stats</a></li>
+                <li><a href="#">Teams</a></li>
+                <li><a style="margin-bottom: 20px;" href="#">Blog</a></li>   
+                
+                <a style="padding: 7px 30px 7px 30px; border-radius: 4px; background-color: #1C84F6;
+                color: white; text-decoration: none; width: 120px; height: 41px;" href="#" class="light-btn">
+                    login
+                </a>
+            </ul>
+        </div>
+
+    </div>
+
+    <nav class="topNav" id="main-nav">
+
+        <div class="logo">
+            <a href="#" class="title">
+                riyadha.
+            </a>
+        </div>
+
+        <div class="nav-links">
+            <ul>
+                <li>
+                    <a href="">Home</a>
+                </li>
+                <li>
+                    <a style="color: #a5d0ff;" href="">Events</a>
+                </li>
+                <li>
+                    <a href="">Stats</a>
+                </li>
+                <li>
+                    <a href="">Teams</a>
+                </li>
+                <li>
+                    <a href="">Blog</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="auth-grp">
+            <a href="#" class="light-btn">
+                login
+            </a>
+        </div>
+
+        <div onclick="openNav()" class="toggle-btn">
+            <img src="img/menu.svg" alt="toggle links">
+        </div>
+
+    </nav>
+
+    <div class="events-banner">
+        <h1>events</h1>
+    </div>
+
+    <div class="events-wrapper">
+        <div class="input-grps">
+            <div style="margin-top: 10px;" class="grp">
+                <select name="month" id="month">
+                    <option value="february">february</option>
+                    <option value="march">march</option>
+                    <option value="april">april</option>
+                    <option value="may">may</option>
+                </select>
+
+                <button type="submit">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M16.5833 17.4792L11.1042 12C10.6875 12.3611 10.2014 12.6424 9.64583 12.8438C9.09028 13.0452 8.5 13.1459 7.875 13.1459C6.375 13.1459 5.10417 12.625 4.0625 11.5834C3.02083 10.5417 2.5 9.28474 2.5 7.81252C2.5 6.3403 3.02083 5.08335 4.0625 4.04169C5.10417 3.00002 6.36806 2.47919 7.85417 2.47919C9.32639 2.47919 10.5799 3.00002 11.6146 4.04169C12.6493 5.08335 13.1667 6.3403 13.1667 7.81252C13.1667 8.40974 13.0694 8.98613 12.875 9.54169C12.6806 10.0972 12.3889 10.6181 12 11.1042L17.5 16.5625L16.5833 17.4792ZM7.85417 11.8959C8.97917 11.8959 9.9375 11.4965 10.7292 10.6979C11.5208 9.89933 11.9167 8.93752 11.9167 7.81252C11.9167 6.68752 11.5208 5.72572 10.7292 4.9271C9.9375 4.12849 8.97917 3.72919 7.85417 3.72919C6.71528 3.72919 5.74653 4.12849 4.94792 4.9271C4.14931 5.72572 3.75 6.68752 3.75 7.81252C3.75 8.93752 4.14931 9.89933 4.94792 10.6979C5.74653 11.4965 6.71528 11.8959 7.85417 11.8959Z" fill="white"/>
+                    </svg>                        
+                </button>
+            </div>
+
+            <a style="margin-top: 10px;" class="black-btn">
+                create
+            </a>
+        </div>
+
+        <div class="event-cards">
+
+            <a class="card" href="">
+                <!-- <div class="card"> -->
+                    <div class="day">
+                        <span>14</span>
+                    </div>
+
+                    <div class="sect">
+                        <div style="background-position: center; background-size: cover;background-image: url('img/hall-cup-img.png');" class="img">
+                            <img src="img/hall-cup-img.png" alt="">
+                        </div>
+
+                        <div class="txt">
+                            
+                                <div class="title">
+
+                                    <h1>Inter-hall Cup</h1>
+                                    <span class="pending">
+                                        pending
+                                    </span>
+                                </div>
+                
+                                <div class="blurb">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi quaerat atque culpa numquam, quae possimus consequatur perspiciatis earum saepe laborum, provident, vel totam reiciendis voluptas quidem qui natus ex molestias!</p>
+                                </div>
+                
+                                <div class="card-footer">
+                                    <svg width="66" height="16" viewBox="0 0 66 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M65.7071 8.70711C66.0976 8.31658 66.0976 7.68342 65.7071 7.29289L59.3431 0.928932C58.9526 0.538408 58.3195 0.538408 57.9289 0.928932C57.5384 1.31946 57.5384 1.95262 57.9289 2.34315L63.5858 8L57.9289 13.6569C57.5384 14.0474 57.5384 14.6805 57.9289 15.0711C58.3195 15.4616 58.9526 15.4616 59.3431 15.0711L65.7071 8.70711ZM0 9H65V7H0L0 9Z" fill="black"/>
+                                    </svg>         
+                                </div>
+                        
+                        </div>
+                    </div>
+                <!-- </div> -->
+            </a>
+
+            <a class="card" href="">
+                <!-- <div class="card"> -->
+                    <div class="day">
+                        <span>14</span>
+                    </div>
+
+                    <div class="sect">
+                        <div style="background-position: center; background-size: cover;background-image: url('img/hall-cup-img.png');" class="img">
+                            <img src="img/hall-cup-img.png" alt="">
+                        </div>
+
+                        <div class="txt">
+                            
+                                <div class="title">
+
+                                    <h1>Inter-hall Cup</h1>
+                                    <span class="pending">
+                                        pending
+                                    </span>
+                                </div>
+                
+                                <div class="blurb">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi quaerat atque culpa numquam, quae possimus consequatur perspiciatis earum saepe laborum, provident, vel totam reiciendis voluptas quidem qui natus ex molestias!</p>
+                                </div>
+                
+                                <div class="card-footer">
+                                    <svg width="66" height="16" viewBox="0 0 66 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M65.7071 8.70711C66.0976 8.31658 66.0976 7.68342 65.7071 7.29289L59.3431 0.928932C58.9526 0.538408 58.3195 0.538408 57.9289 0.928932C57.5384 1.31946 57.5384 1.95262 57.9289 2.34315L63.5858 8L57.9289 13.6569C57.5384 14.0474 57.5384 14.6805 57.9289 15.0711C58.3195 15.4616 58.9526 15.4616 59.3431 15.0711L65.7071 8.70711ZM0 9H65V7H0L0 9Z" fill="black"/>
+                                    </svg>         
+                                </div>
+                        
+                        </div>
+                    </div>
+                <!-- </div> -->
+            </a>
+            
+        </div>
+    </div>
+    
+    <footer>
+        <div class="wrap">
+            <h1>riyadha.</h1>
+            <small>powered by <span>deta20</span></small>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+
+
+</body>
+</html>

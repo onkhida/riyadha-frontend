@@ -106,6 +106,7 @@ nav .nav-links ul li a {
     background-color: #1C84F6;
     color: white;
     text-decoration: none;
+    cursor: pointer;
 }
 
 .overlay {
@@ -190,7 +191,7 @@ nav .nav-links ul li a {
     font-size: 13px;
     color: #0065D3;
     margin-bottom: 30px;
-    font-weight: bold;
+    font-weight: bold; 
 }
 
 .landing-row .text-col p {
@@ -206,7 +207,8 @@ nav .nav-links ul li a {
     border-radius: 4px;
     background-color: black;
     color: white;
-    text-decoration: none;    
+    text-decoration: none;  
+    cursor: pointer;  
 }
 
 .landing-row .image-col {
@@ -335,8 +337,223 @@ footer .wrap small span {
     color: #9ACAFF;
 }
 
+.not-found-sect {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+    margin-bottom: 60px;
+    margin-top: 60px;
+}
+
+.not-found-sect .container {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.not-found-sect .container h1 {
+    font-size: 40px;
+    margin-top: 70px;
+}
+
+.not-found-sect .container small {
+    color: #1C84F6;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+}
 
 
+.events-banner {
+    width: 100vw;
+    height: 330px;
+    background-image: url('../img/events-banner.png');
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.events-banner h1 {
+    font-size: 38px;
+    padding: 0 30px 4px 30px;
+    border-bottom: 4px solid #1C84F6;
+    color: white;
+}
+
+.events-wrapper {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 50px 0 50px 0;
+}
+
+.events-wrapper .input-grps {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+.events-wrapper .input-grps .create-btn {
+    padding: 7px 40px 7px 40px;
+    border-radius: 2px;
+    background-color: black;
+    color: white;
+    text-decoration: none;  
+    cursor: pointer;  
+}
+
+.events-wrapper .input-grps .grp {
+    display: flex;
+}
+
+.events-wrapper .input-grps .grp select {
+    background: #EBEBEB;
+    border: 2px solid #626262;
+    box-sizing: border-box;
+    border-radius: 5px;
+    width: 354px;
+    height: 47px;
+    font-size: 14px;
+    font-weight: bold;
+    margin-right: 10px;
+    cursor: pointer;
+    outline: none;
+}
+
+.events-wrapper .input-grps .grp button {
+    outline: none;
+    background-color: black;
+    height: 47px;
+    width: 45px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.events-wrapper .event-cards {
+    width: 80%;
+    
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.events-wrapper .event-cards .card { 
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    text-decoration: none;
+    color: black;
+    margin-top: 40px;
+}
+
+.events-wrapper .event-cards .card:nth-of-type(odd) .day {
+    padding: 25px;
+    border-radius: 50%;
+    background: #8BC2FF;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.events-wrapper .event-cards .card:nth-of-type(even) .day {
+    padding: 25px;
+    border-radius: 50%;
+    background: black;
+    color: #8BC2FF;
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.events-wrapper .event-cards .card .sect {
+    width: 644px;
+    /* transition: 0.2s ease-in-out; */
+    border-radius: 5px;
+    display: flex;
+    margin: 10px;
+    flex-wrap: wrap;
+    align-items: stretch;
+}
+
+.events-wrapper .event-cards .card .sect .img {
+    width: 30%;
+    flex: 1;
+    /* border: 3px solid red; */
+}
+
+.events-wrapper .event-cards .card .sect .img img{
+    width: 100%;
+    display: none;
+
+}
+
+.events-wrapper .event-cards .card .sect .txt {
+    width: 70%;
+    padding: 30px;
+    background: #F1F1F1;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.events-wrapper .event-cards .card .sect:hover {
+    border: 2px solid rgb(103, 103, 246);
+    
+}
+
+.events-wrapper .event-cards .card .sect .txt .title {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.events-wrapper .event-cards .card .sect .txt .title h1 {
+    font-size: 18px;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.events-wrapper .event-cards .card .sect .txt .title .pending {
+    font-size: 8px;
+    font-weight: bold;
+    padding: 8px 21px 8px 21px;
+    border-radius: 40px;
+    background: #D1C800;
+}
+
+.events-wrapper .event-cards .card .sect .txt .blurb {
+    font-weight: bold;
+    font-size: 8px;
+    margin-bottom: 10px;
+}
+
+.events-wrapper .event-cards .card .sect .txt .card-footer {
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+*:focus {
+    outline: none;
+}
 
 
 
@@ -380,6 +597,22 @@ footer .wrap small span {
         right: 35px;
     }
 }
+@media screen and (max-width: 780px) {
+    .events-wrapper .event-cards .card .sect {
+        width: 90%;
+    }
+
+    .events-wrapper .event-cards .card .sect .img {
+        width: 100%;
+        flex: 0 1 auto;        ;
+    }
+
+    .events-wrapper .event-cards .card .sect .txt {
+        width: 100%;
+        flex: 0 1 auto; 
+    }
+}
+
 
 @media screen and (max-width: 900px) {
     .toggle-btn {
@@ -405,6 +638,11 @@ footer .wrap small span {
         display: none;
     }
 
+    .events-wrapper .event-cards .card .sect .img img{
+        width: 100%;
+        display: block;
+    
+    }
 
 }
 
